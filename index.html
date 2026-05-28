@@ -1777,6 +1777,7 @@ async function cargarCatalogos(){
 }
 
 
+async function cargarProyectos(){
   const res = await apiGet('getProyectos');
   if(res.ok && Array.isArray(res.data)){
     proyectos = res.data;
